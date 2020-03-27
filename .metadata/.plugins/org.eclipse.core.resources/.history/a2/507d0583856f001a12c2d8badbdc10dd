@@ -1,0 +1,5 @@
+package com.example.webservices.exception;
+
+public class ExceptionResponse {
+
+}

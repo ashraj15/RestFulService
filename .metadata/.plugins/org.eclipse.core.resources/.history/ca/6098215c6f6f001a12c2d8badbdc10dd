@@ -1,0 +1,26 @@
+package com.example.webservices.helloWorld;
+
+public class HelloWorldBean {
+	
+	private String message;
+	
+	
+
+	public String getMessage() {
+		return message;
+	}
+
+
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+
+
+	public HelloWorldBean(String string) {
+		// TODO Auto-generated constructor stub
+		 this.message = message;
+	}
+
+}

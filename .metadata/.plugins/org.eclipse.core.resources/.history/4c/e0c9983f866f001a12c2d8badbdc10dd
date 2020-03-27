@@ -1,0 +1,15 @@
+package com.example.webservices.exception;
+
+import org.springframework.web.bind.annotation.ControllerAdvice;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+
+//methods to be shared across multiple {@code @Controller} classes.
+@ControllerAdvice
+
+@RestController
+public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+	
+	
+
+}

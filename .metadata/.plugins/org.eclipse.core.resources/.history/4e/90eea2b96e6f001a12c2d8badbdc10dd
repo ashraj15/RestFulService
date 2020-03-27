@@ -1,0 +1,12 @@
+package com.example.webservices.helloWorld;
+
+public class HelloWorldBean {
+	
+	private String message;
+
+	public HelloWorldBean(String string) {
+		// TODO Auto-generated constructor stub
+		return this.
+	}
+
+}

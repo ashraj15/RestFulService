@@ -1,0 +1,19 @@
+package com.example.webservices.user;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class userController {
+	
+	private UserDao userdao;
+	
+	@GetMapping(path = "/findUsers")
+	public List<User> findUsers(){
+		return null;
+	}
+
+}

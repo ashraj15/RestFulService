@@ -1,0 +1,10 @@
+package com.example.webservices.user;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class UserDao {
+	
+	
+
+}

@@ -1,0 +1,7 @@
+package com.example.webservices.exception;
+
+import ResponseEntityExceptionHandler;
+
+public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+
+}
