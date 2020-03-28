@@ -19,7 +19,6 @@ public class User {
 	
 	
 	@Past
-	@ApiModelProperty(notes = "should be in past")
 	private Date dob;
 
 	public Integer getId() {

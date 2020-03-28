@@ -2459,3 +2459,39 @@ Contains: Missing io.springfox:springfox-swagger2:jar:sources:1.4.0
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.313
 !MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.198
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.198
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.201
+!MESSAGE classpath=129 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.201
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 129
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.202
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:08:46.227
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.068
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.068
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.069
+!MESSAGE classpath=127 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.070
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 127
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.070
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:10:25.084
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
