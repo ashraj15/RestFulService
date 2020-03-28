@@ -5,13 +5,18 @@ import java.util.Date;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Size;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
+
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
 @ApiModel(description = "Validation for users")
+@JsonFilter("User Filter")
 public class User {
 	
-	private Integer id;
+	//Add @JsonIgnore to the filed to ignore that filed in output -- example of static filter
+	
+	private  Integer id;
 	
 	@Size(min =2, message = "name should be atleast 2 character")
 	@ApiModelProperty(notes = "should have atleast 2 character")

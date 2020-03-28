@@ -2,17 +2,18 @@ package com.example.webservices.user;
 
 
 import java.net.URI;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-
 //import org.springframework.hateoas.Resource;
 
 //import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -21,24 +22,48 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.fasterxml.jackson.databind.ser.FilterProvider;
+import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
+import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
+
 @RestController
 public class userController {
 	
 	@Autowired
 	private UserDao userdao;
 	
+	
+	
+	
+	
 	@GetMapping(path = "/findUsers")
-	public List<User> findUsers(){
-		return userdao.findAll();
+	public MappingJacksonValue findUsers(){
+		
+		List<User> users = userdao.findAll();
+		
+		SimpleBeanPropertyFilter filter =  SimpleBeanPropertyFilter.filterOutAllExcept("id","name"); //dynamic filtering
+		FilterProvider filters = new SimpleFilterProvider().addFilter("User Filter", filter);
+		
+		MappingJacksonValue map = new MappingJacksonValue(users);
+		map.setFilters(filters);
+			
+		
+		return map;
 	}
 	
 	@GetMapping(path = "/findUser/{id}")
-	public User findUser(@PathVariable Integer id ){
+	public MappingJacksonValue findUser(@PathVariable Integer id ){
+		
+		SimpleBeanPropertyFilter filter =  SimpleBeanPropertyFilter.filterOutAllExcept("dob","name"); //dynamic filtering
+		FilterProvider filters = new SimpleFilterProvider().addFilter("User Filter", filter);
+		
 		
 		User uid = userdao.findOne(id);
+		MappingJacksonValue map = new MappingJacksonValue(uid);
+		map.setFilters(filters);
 		if(uid == null)
 			throw new UserNotFoundException("id- "+id);
-		return uid;
+		return map;
 	}
 
 	

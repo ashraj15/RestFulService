@@ -1,7 +1,0 @@
-package com.example.webservices.user;
-
-
-@RestController
-public class userController {
-
-}
