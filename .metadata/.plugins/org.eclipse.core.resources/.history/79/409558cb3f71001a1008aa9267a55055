@@ -9,8 +9,6 @@ import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Resource;
-import org.springframework.hateoas.mvc.ControllerLinkBuilder;
-
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.*;
 
 //import org.springframework.hateoas.Resource;
@@ -67,7 +65,6 @@ public class userController {
 		
 		Resource<User> res = new Resource<User>(uid);
 		ControllerLinkBuilder link = linkTo(methodOn(this.getClass()).findUsers());
-		res.add(link.withRel("all_users"));
 		
 		MappingJacksonValue map = new MappingJacksonValue(uid);
 		map.setFilters(filters);

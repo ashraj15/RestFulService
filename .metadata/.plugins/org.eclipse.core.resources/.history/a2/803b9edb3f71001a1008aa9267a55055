@@ -67,7 +67,7 @@ public class userController {
 		
 		Resource<User> res = new Resource<User>(uid);
 		ControllerLinkBuilder link = linkTo(methodOn(this.getClass()).findUsers());
-		res.add(link.withRel("all_users"));
+		res.add(link.withRel("all_users");
 		
 		MappingJacksonValue map = new MappingJacksonValue(uid);
 		map.setFilters(filters);
