@@ -1,0 +1,33 @@
+package com.example.webservices.helloWorld;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloWorldController {
+	
+	@GetMapping(path = "/hello-world")
+	public String helloworld() {
+		return "hi";
+	}
+	
+	@GetMapping(path = "/hello-world-bean")
+	public HelloWorldBean helloworldBean() {
+		return new HelloWorldBean("Hi wassup") ;
+	}
+	
+	//Query parameter --- http://localhost:8080/hello-world-beans?name=Raj
+	@GetMapping(path = "/hello-world-beans")
+	public HelloWorldBean hellouser(@RequestParam String name) {
+		return new HelloWorldBean("Hi wassup "+name) ;
+	}
+	
+	//PathVariable --- http://localhost:8080/hello-world-beans/raj
+	@GetMapping(path = "/hello-world-beans/{name}")
+	public HelloWorldBean hellousers(@PathVariable String name) {
+		return new HelloWorldBean("Hi wassup "+name) ;
+	}
+
+}
