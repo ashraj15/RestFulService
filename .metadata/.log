@@ -2180,3 +2180,282 @@ org.apache.maven.settings.building.SettingsBuildingException: 1 problem was enco
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 05:22:58.653
 !MESSAGE executing callback sts4.classpath.DVndqmJl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.530
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.530
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.532
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.532
+!MESSAGE buffering callback sts4.classpath.DVndqmJl webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.533
+!MESSAGE executing callback sts4.classpath.DVndqmJl 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:26.547
+!MESSAGE executing callback sts4.classpath.DVndqmJl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.837
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.837
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.838
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.838
+!MESSAGE buffering callback sts4.classpath.DVndqmJl webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.839
+!MESSAGE executing callback sts4.classpath.DVndqmJl 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:25:44.853
+!MESSAGE executing callback sts4.classpath.DVndqmJl SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:28:41.547
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DVndqmJl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:28:41.548
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.DVndqmJl
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:28:41.548
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:28:41.549
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.DVndqmJl => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:12.775
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:12.776
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@1ba84d52[org.springframework.tooling.boot.ls:1.14.0.201912170939(id=1006)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:12.776
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.375
+!MESSAGE Boot LS startup time from start to initialized: 1598ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.406
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jOXiupbcisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.407
+!MESSAGE subscribing to classpath changes: sts4.classpath.jOXiupbc isBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.407
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.407
+!MESSAGE subsribers = {sts4.classpath.jOXiupbc=Send Classpath Notifications(5450)}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.407
+!MESSAGE Sending initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.407
+!MESSAGE project webservices ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.408
+!MESSAGE Sending initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.408
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.jOXiupbc => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.408
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.408
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.410
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.411
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.411
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:31:14.454
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-28 11:48:42.568
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:1.4.0 is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.648
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.649
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.651
+!MESSAGE classpath=118 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.653
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.653
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:43.685
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2020-03-28 11:48:44.557
+!MESSAGE The POM for io.springfox:springfox-swagger2:jar:1.4.0 is missing, no dependency information available
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.703
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.704
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.713
+!MESSAGE classpath=118 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.713
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.714
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:48:44.724
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2020-03-28 11:48:47.072
+!MESSAGE Could not download sources for io.springfox:springfox-swagger2:1.4.0
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:1.4.0
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:805)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:114)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:750)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:330)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:304)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:269)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:233)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:161)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:179)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:153)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:101)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1375)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:161)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing io.springfox:springfox-swagger2:jar:sources:1.4.0
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2020-03-28 11:48:47.073
+!MESSAGE Could not resolve artifact io.springfox:springfox-swagger2:jar:sources:1.4.0
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2020-03-28 11:48:47.073
+!MESSAGE Missing io.springfox:springfox-swagger2:jar:sources:1.4.0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.775
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.775
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.777
+!MESSAGE classpath=128 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.778
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 128
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.778
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.791
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.843
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.843
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.845
+!MESSAGE classpath=128 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.846
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 128
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.846
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:05.931
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.956
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.956
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.958
+!MESSAGE classpath=128 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.958
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 128
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.958
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 11:50:41.980
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.012
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.012
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.014
+!MESSAGE classpath=129 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.015
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 129
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.015
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:18.045
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.211
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.212
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.217
+!MESSAGE classpath=129 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.218
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 129
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.218
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 13:36:22.249
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.300
+!MESSAGE Preparing classpath changed notification webservices
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.301
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.302
+!MESSAGE classpath=117 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.303
+!MESSAGE buffering callback sts4.classpath.jOXiupbc webservices false 117
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.303
+!MESSAGE executing callback sts4.classpath.jOXiupbc 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-28 14:02:48.313
+!MESSAGE executing callback sts4.classpath.jOXiupbc SUCCESS [done]

@@ -1,0 +1,2 @@
+spring.messages.basename=messages
+logging.level.org.springframework=info
