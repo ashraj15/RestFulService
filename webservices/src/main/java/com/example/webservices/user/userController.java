@@ -26,9 +26,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import com.example.webservices.exception.CustomizedResponseEntityExceptionHandler;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
+import org.springframework.web.context.request.WebRequest;
 
 @RestController
 public class userController {
@@ -36,9 +38,11 @@ public class userController {
 	@Autowired
 	private UserDao userdao;
 	
+	@Autowired
+	private WebRequest req;
 	
-	
-	
+	@Autowired
+	private CustomizedResponseEntityExceptionHandler customex; 
 	
 	@GetMapping(path = "/findUsers")
 	public MappingJacksonValue findUsers(){
@@ -47,7 +51,7 @@ public class userController {
 		
 		SimpleBeanPropertyFilter filter =  SimpleBeanPropertyFilter.filterOutAllExcept("id","name"); //dynamic filtering
 		FilterProvider filters = new SimpleFilterProvider().addFilter("User Filter", filter);
-		
+	
 		MappingJacksonValue map = new MappingJacksonValue(users);
 		map.setFilters(filters);
 			
@@ -58,24 +62,32 @@ public class userController {
 	@GetMapping(path = "/findUser/{id}")
 	public MappingJacksonValue findUser(@PathVariable Integer id ){
 		
+		
+		
 		SimpleBeanPropertyFilter filter =  SimpleBeanPropertyFilter.filterOutAllExcept("dob","name"); //dynamic filtering
 		FilterProvider filters = new SimpleFilterProvider().addFilter("User Filter", filter);
-		
+//		
 		
 		
 		User uid = userdao.findOne(id);
+		
+		System.out.println("uid "+uid);
+		MappingJacksonValue map = new MappingJacksonValue(uid);
+		
+		if(uid == null) 	
+			throw new UserNotFoundException("id- "+id);
+			
+		
 		
 		Resource<User> res = new Resource<User>(uid);
 		ControllerLinkBuilder link = linkTo(methodOn(this.getClass()).findUsers());
 		res.add(link.withRel("all_users"));
 		
-		MappingJacksonValue map = new MappingJacksonValue(uid);
 		map.setFilters(filters);
 		map.setValue(res);
-		if(uid == null)
-			throw new UserNotFoundException("id- "+id);
 		return map;
-	}
+		}
+
 
 	
 	// ResponseEntity ---> Extension of HttpEntity that adds a HttpStatus status code.
