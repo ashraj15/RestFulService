@@ -10,6 +10,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.hateoas.Resource;
 import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 
@@ -26,7 +27,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fasterxml.jackson.databind.ser.FilterProvider;
-import com.fasterxml.jackson.databind.ser.PropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
 import com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider;
 
@@ -45,10 +45,13 @@ public class userControllerJPA {
 	@Autowired
 	private PostRepository postRepo;
 	
+	@Value("${myapp.language}")
+	String lang;
 	
 	@GetMapping(path = "/jpa/findUsers")
 	public MappingJacksonValue findUsers(){
 		
+		System.out.println("language is :"+lang);
 		List<User> users = userRepo.findAll();
 		
 		SimpleBeanPropertyFilter filter =  SimpleBeanPropertyFilter.filterOutAllExcept("id","name"); //dynamic filtering
