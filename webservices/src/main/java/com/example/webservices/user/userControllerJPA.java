@@ -42,6 +42,10 @@ public class userControllerJPA {
 	@Autowired
 	private UserRepository userRepo;
 	
+	@Autowired
+	private PostRepository postRepo;
+	
+	
 	@GetMapping(path = "/jpa/findUsers")
 	public MappingJacksonValue findUsers(){
 		
@@ -138,5 +142,36 @@ public class userControllerJPA {
 	//	map.setValue(res);
 				
 		return map;
+	}
+	
+	@PostMapping(path = "/jpa/user/{id}/saveUser")
+	public ResponseEntity<User> createPost(@Valid @RequestBody Post post, @PathVariable Integer id) {
+		
+		Optional<User> uid = userRepo.findById(id);
+		
+		if(!uid.isPresent())
+			throw new UserNotFoundException("id- "+id);
+		
+		post.setUser(uid.get());
+		postRepo.save(post);
+		
+		
+		
+	//	Resource<User> res = new Resource<User>(newuser);
+		ControllerLinkBuilder link = linkTo(methodOn(this.getClass()).findUserPosts(id));
+		
+		
+	//	res.add(link.withRel("all_users"));
+		
+		
+		MappingJacksonValue map = new MappingJacksonValue(uid.get());
+		ResponseEntity<User> value = ResponseEntity.created(link.toUri()).build();
+	//	map.setValue(res);
+		map.setValue(value);
+	
+		return value;
+		
+		
+		
 	}
 }
